@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>github課題</title>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	<h1 class="site-name">github課題</h1>
+	<ul id="nav">
+		<li class="active"><a href="index.html" >Home</a></li>
+		<li><a href="issues.html">github の issuesの使い方</a></li>
+		<li><a href="#">GithubPagesの作り方と活用方法</a></li>
+		<li><a href="#">githubのpull requestでLabelや Assigneeの使い方</a></li>
+		<li><a href="#">github のGistの使い方について</a></li>
+        <li><a href="#">revert, reset などgitコマンド利用方法の使い方</a></li>
+        <li><a href="#">github の Milestones の使い方</a></li>
+        <li><a href="#">GitHub と Slack を連携させる方法と利用事例について</a></li>
+        <li><a href="#">github のGitHub Wikisの作り方と活用方法</a></li>
+        <li><a href="#">ZenHub for GitHubの活用方法について</a></li>
+        <li><a href="#">gitbookの活用方法について</a></li>
+        <li><a href="#">github のemoticonやLTTMについて</a></li>
+	</ul>
+    </div>
+<h1>issuesの使い方</h1>
+        <h2>Title</h2>
+            タイトルだけでIssueの内容が把握できるようにする。
+            Issueがバグの場合は、設計要素の名称を書く。<br><br>
+        
+        <h2>Comment</h2>
+            Issueがバグの場合、以下の内容を簡潔に書く。<br><br>
+
+        <h3>問題の内容</h3>
+            複数の問題をひとつのIssueに含めない。面倒だけど問題の数だけIssueを発行する。<br><br>
+
+        <h3>実行環境</h3>
+            OSやブラウザのバージョンなど<br>
+            Windows 7 、Chrome 44<br><br>
+
+        <h3>再現手順</h3>
+            できる限り詳しく再現の手順を書く。<br>
+        xx画面を表示する<br>
+        xx項目にユーザ名を入力する<br>
+        xxボタンを押下すると「～～～」というエラーが表示される<br><br>
+    
+        <h3>修正すべき内容</h3>
+        どうなるのが正しい動作を書く。<br>
+        わかれば修正の仕方も書く。<br><br>
+    
+    <h2>Labels</h2>
+        <h3>bug</h3>
+        バグ報告をするときに使う。<br>
+        → 修正したらクローズする<br><br>
+
+        <h3>duplicate</h3>
+        過去に報告されているIssueと重複しているときに使う。<br>
+        ※ 報告者は使わない<br>
+        → 重複先のIssueにリンクしてクローズする<br><br>
+
+        <h3>enhancement</h3>
+        機能追加の要望や改善してほしいときに使う。<br>
+        → 実装したらクローズする<br><br>
+
+        <h3>invalid</h3>
+        Issueの内容が間違いであるときに使う。<br>
+        仕様通り。<br>
+        ※ 報告者は使わない<br>
+        → 対処しない理由を書いてクローズする<br><br>
+
+        <h3>question</h3>
+        質問したいときに使う。<br>
+        → 質問・議論の答えがでたらクローズする<br><br>
+
+        <h3>wontfix</h3>
+        認知しているけど対処しないバグのときに使う。<br>
+        ※ 報告者は使わない<br>
+        → 対処しない理由を書いてクローズする<br><br>
+
+        <h3>Milestone</h3>
+        マイルストーンを指定することで、「いつまでに何をやらなければならないのか」が集計される。<br>
+        タスク管理や進捗管理として使われる。<br><br>
+
+        <h3>Assignee</h3>
+        Issueを誰に割り当てるかを指定する。<br><br>
+
+        <h3>Issueをクローズするコミットメッセージ</h3>
+        コミットメッセージに以下のフォーマットで記述すれば、自動的に該当Issue（#12）がCloseされる<br><br>
+
+</div>
+</body>
+</html>
