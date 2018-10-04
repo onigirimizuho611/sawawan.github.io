@@ -26,7 +26,46 @@
         <li><a href="#">github のemoticonやLTTMについて</a></li>
 	</ul>
     </div>
+<h1>githubのpull requestでLabelや Assigneeの使い方</h1>
+       <h1>プルリクエストとは？</h1>
+        <p>プルリクエストとは、コードの変更をレビュワーに通知し、マージを依頼する機能です。<br>
+        コードのレビューを受けることで、1人で作ると気がつかないコードの指摘やバグや記述ミスの発見ができ、コードの品質を高めます。<br>
+        レビュワーにとっても、他人が書いたコードを読むことで新しい書き方を発見できるというメリットがあります。<br>
+        コードから発展してプロジェクトに関する有意義な議論の場になることもあるでしょう。</p>
 
+        <h1>Labelの意味</h1>
+        <p>IssueやPullRequestの内容に応じてLabelを付与しています。
+        それぞれの意味は以下のとおりです。</p>
+        <ol>
+            <li>bug</li>
+            <ol><li>不具合に関するIssueやPullRequest付与されるラベル</li>
+                <li>トリアージ後 bug:Critical, bug:High, bug:Middle, bug:low に分類されます。</li></ol>
+            <li>discussion</li>
+            <ol><li>実装方法や方針について意見を募集しているIssueやPullRequestに付与されます。</li></ol>
+            <li>document</li>
+            <ol><li>ドキュメント整備に関わるIssueやPullRequestに付与されます。</li></ol>
+            <li>duplicate</li>
+            <ol><li>重複。既に同様のIssueが投稿されていた場合に付与しIssueはクローズされます。</li></ol>
+            <li>enhancement</li>
+            <ol><li>機能強化、改善に関するIssueやPullRequestに付与されます。</li></ol>
+            <li>experimental</li>
+            <ol><li>正式に採用される前の試験的な実装についてのIssueやPullRequestに付与されます。</li></ol>
+            <li>fix-me</li>
+            <ol><li>追加での修正が必要なPullRequestに付与されます。</li></ol>
+            <li>question</li>
+            <ol><li>本体の実装方針や本体の開発に関する質問がされているIssueに付与されます。</li></ol>
+            <li>ready-for-merge</li>
+            <ol><li>マージ可能なPullRequestに付与されます。</li></ol>
+            <li>ラベル付与後、数日たっても異論がなければマージされます。</li>
+            <ol><li>template</li></ol>
+            <li>フロントのデザインテンプレートのTwigやJS、CSSに変更のあるPullRequestに付与されます。</li>
+            <ol><li>wontfix</li></ol>
+            <li>修正しません。仕様の場合や他の理由により修正が不要となったIssueに付与しIssueはクローズされます。</li>
+            <ol><li>worksforme</li></ol>
+            <li>報告いただいた不具合などが再現しなかったIssueに付与しIssueはクローズされます。</li>
+        </ol>
+    <h1>Assigneeの使い方</h1>
+    <p>Assigneeとは譲受人の意味、権限を受け取った人のことを指します。
 </div>	
 </body>
 </html>
