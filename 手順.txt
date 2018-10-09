@@ -1,9 +1,0 @@
-git checkout -b (branch–¼)
-
-git push -u origin (branch–¼)
-
-git add .
-
-git commit
-
-git push --set-upstream origin (branch–¼)
