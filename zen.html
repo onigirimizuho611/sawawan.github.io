@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>github課題</title>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	<h1 class="site-name">github課題</h1>
+	<ul id="nav">
+		<li class="active"><a href="index.html" >Home</a></li>
+		<li><a href="issues.html">github の issuesの使い方</a></li>
+		<li><a href="#">GithubPagesの作り方と活用方法</a></li>
+		<li><a href="#">githubのpull requestでLabelや Assigneeの使い方</a></li>
+		<li><a href="#">github のGistの使い方について</a></li>
+        <li><a href="#">revert, reset などgitコマンド利用方法の使い方</a></li>
+        <li><a href="#">github の Milestones の使い方</a></li>
+        <li><a href="#">GitHub と Slack を連携させる方法と利用事例について</a></li>
+        <li><a href="#">github のGitHub Wikisの作り方と活用方法</a></li>
+        <li><a href="#">ZenHub for GitHubの活用方法について</a></li>
+        <li><a href="#">gitbookの活用方法について</a></li>
+        <li><a href="#">github のemoticonやLTTMについて</a></li>
+	</ul>
+        <h1>ZenHubとは</h1>
+        専用の拡張をインストールすると、GitHubそのものが拡張される。<br>
+        GitHubに足りないアジャイルらしさを組み込むもの。<br><br>
+
+        ・リポジトリを簡単に切り替えられる機能<br>
+        ・タスクボード（カンバン）<br>
+        ・ファイルアップロード機能をより便利にする<br>
+        ・コードのコメントやイシューのコメントに+1できる機能<br>
+        ・issueの情報をJSONファイルでエクスポートできる謎機能<br><br>
+        
+        <h1>ZenHubでできること</h1>
+        <h2>リポジトリを簡単に切り替えられる機能</h2>
+        リポジトリ名の横にボタンが増え、クリックするとリポジトリ一覧が表示される。<br>
+        インクリメンタルサーチでリポジトリを簡単に切り替えることができる。<br>
+        Ctrl+nで下候補に移動、Ctrl+pで上候補に移動できる。<br><br>
+        
+        <h1>タスクボード</h1>
+        リポジトリのページの右側にBoardsというメニューが増えている。<br>
+        自分の好きなフローを選択する。<br>
+        もしくはCreate your ownから自分で作ることもできる。<br>
+        なお、このラベル（BacklogとかTo Doなどはあとから変えられる）。<br><br>
+        そしてissueを作る。<br>
+        右側にPipelineというのがあるので、デフォはBacklogになっている（ここでは残務）が、進行中であれば別のものを選択したりできる。<br>
+        issueが作成されていれば、PivotalやHuBoardのように、issueが一覧される。<br>
+        移動したりラベルを変えるとリアルタイムで反映される。<br>
+        この並び順はおそらくZenHub側に保存される。<br>
+        必要があればカラムを追加したり削除したりする。<br>
+        カラムを削除した際に、そのカラムにあったissueはBacklogへ移動する。<br>
+        HuBoardのようにここからissueの状態（assignやlabel）を変更することはできない。<br>
+        issueをクリックして該当issueが別窓で開くのでそこから変えなくてはいけないのが面倒か。<br>
+        また、LabelsやMilestone、Assigneeなどでissueをフィルターできるのは便利。<br><br>
+
+        <h1>ファイルアップロード機能をより便利にする</h1>
+        GitHubのコメント欄にドラッグアンドドロップでファイルを添付できるようになる。<br>
+        通常は、PNG/GIF/JPGしかアップロードできないのですが、ドラッグアンドドロップでアップロードする機能を使うと、どんなファイルでもアップロードできるようになる。<br><br>
+        
+        通常は https://cloud.githubusercontent.com にアップされるのですが、そこから上げた場合はhttps://files.zenhub.io/以下にアップされる。<br>
+        そしてそこへのリンクが作られる。<br><br>
+        
+        <h1>issueの情報をJSONファイルでエクスポート</h1>
+        issueのページでExport Issueを押すと、Blob的なのでJSONを作って、ダウンロードできる。<br>
+    </div>
+</div>	
+</body>
+</html>
