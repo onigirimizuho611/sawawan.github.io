@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>github課題</title>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	<h1 class="site-name">github課題</h1>
+	<ul id="nav">
+		<li class="active"><a href="index.html" >Home</a></li>
+		<li><a href="issues.html">github の issuesの使い方</a></li>
+		<li><a href="#">GithubPagesの作り方と活用方法</a></li>
+		<li><a href="#">githubのpull requestでLabelや Assigneeの使い方</a></li>
+		<li><a href="#">github のGistの使い方について</a></li>
+        <li><a href="#">revert, reset などgitコマンド利用方法の使い方</a></li>
+        <li><a href="#">github の Milestones の使い方</a></li>
+        <li><a href="#">GitHub と Slack を連携させる方法と利用事例について</a></li>
+        <li><a href="#">github のGitHub Wikisの作り方と活用方法</a></li>
+        <li><a href="#">ZenHub for GitHubの活用方法について</a></li>
+        <li><a href="#">gitbookの活用方法について</a></li>
+        <li><a href="#">github のemoticonやLTTMについて</a></li>
+	</ul>
+        <h1>GitHub と Slack を連携させる</h1>
+        GitHub は、ソフトウェア開発者のチームが共同でコードを記述し、プロジェクトを管理するためのツールです。<br>
+        GitHub を Slack に連携させれば、選択した Slack チャンネルであらゆるイベントの通知を受信できるようになります。<br>
+        一番よく使う重要度の高い2つのツールを連携させて、業務の状況を Slack 内から完全に把握できるようにしましょう。<br><br>
+
+
+        <h1>用途に合わせてアプリを選択</h1>
+        Slack 用 GitHub アプリ : GitHub の Developer、Team または Business プランを利用していますか？そんな方にはこのアプリがおすすめです！<br>
+        Github Notifications (レガシー): このアプリは GitHub Enterprise と互換性があります。<br><br>
+        
+        <h1>アプリをインストールする</h1>
+        GitHub アプリを使えば、パブリックリポジトリのリンクのプレビューを Slack で受信し、スラッシュコマンドで通知を設定し、プロジェクトのアクティビティを簡単に把握することができます。<br><br>
+        1.slack.github.com にアクセスし、「Add to Slack」をクリックします。<br>
+        2.アプリが必要とするアクセス権限を確認し、「Continue」をクリックして許可します。<br>
+        3.アプリがアクセスできるチャンネルを選択します (全てのパブリックチャンネル、特定のチャンネル、なし、等)。<br>
+        
+        アプリのインストールが完了すると、GitHub アプリから設定方法と 「/github」のスラッシュコマンドの使い方に関するダイレクトメッセージが送信されます。<br>
+        
+        <h1>通知をカスタマイズする</h1>
+        GitHub アプリを使えば、Slack に投稿する内容のカスタマイズがしやすくなります。<br>
+        チャンネル全体で見てほしい関連のあるアクティビティの情報については購読し、その必要がなくあまり役立たないものについては購読を解除することができます。<br>
+        アクティビティの中には、デフォルトで Slack での通知を行うものと、そうでないものがあります。<br><br>
+        
+        <h2>デフォルトで通知を行う機能</h2>
+            ・issues (イシュー)<br>
+            ・pulls (プル)<br>
+            ・statuses (ステータス)<br>
+            ・コミット<br>
+            ・deployments (デプロイメント)<br>
+            ・public (パブリック)<br><br>
+        
+        <h2>デフォルトで通知されない機能</h2>
+            ・reviews (レビュー)<br>
+            ・comments (コメント)<br>
+            ・branches (ブランチ)<br>
+            ・commits:all (すべてにコミット)<br><br>
+        
+        <h2>以下のスラッシュコマンドも通知のカスタマイズに便利です。</h2>
+        ・/github subscribe owner/repo [機能]<br>
+        ・/github unsubscribe owner/repo [機能]<br>
+
+    </div>
+</div>	
+</body>
+</html>
