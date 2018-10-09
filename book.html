@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>github課題</title>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	<h1 class="site-name">github課題</h1>
+	<ul id="nav">
+		<li class="active"><a href="index.html" >Home</a></li>
+		<li><a href="issues.html">github の issuesの使い方</a></li>
+		<li><a href="#">GithubPagesの作り方と活用方法</a></li>
+		<li><a href="#">githubのpull requestでLabelや Assigneeの使い方</a></li>
+		<li><a href="#">github のGistの使い方について</a></li>
+        <li><a href="#">revert, reset などgitコマンド利用方法の使い方</a></li>
+        <li><a href="#">github の Milestones の使い方</a></li>
+        <li><a href="#">GitHub と Slack を連携させる方法と利用事例について</a></li>
+        <li><a href="#">github のGitHub Wikisの作り方と活用方法</a></li>
+        <li><a href="#">ZenHub for GitHubの活用方法について</a></li>
+        <li><a href="#">gitbookの活用方法について</a></li>
+        <li><a href="#">github のemoticonやLTTMについて</a></li>
+	</ul>
+    </div>
+    <h1>gitbookの活用方法がみつからなかったので、使用方法についてまとめました。</h1>
+    <h1>GitBookとは</h1>
+        GitBookとはざっくり言うと、markdownで書いたドキュメントをhtmlやpdfなどで読みやすい形式に変換をかけて公開まで行えるツールです。
+        構成する要素として、ざっくり以下の2種類の機能が提供されています。
+        GitBookというコマンドラインツール
+        gitbook.comというGitBook特化型ホスティングサービス
+    <h1>GitBookというコマンドラインツールについて</h1>
+        機能の中枢である、markdownで書いたドキュメントをhtmlやpdfなどで読みやすい形式に変換をかける機能を提供してくれるコマンドラインツールです。
+        npmで管理されています。
+        https://github.com/GitbookIO/gitbook
+        ファイルの保存を検知して自動変換を行ってくれる機能なども提供してくれていて文書作成をサポートしてくれます。
+    <h1>gitbook.comというGitBook特化型ホスティングサービスについて</h1>
+        gitbook.comという、GitBookに特化して作られた、文書をweb上で閲覧できるように公開したり、pdfなど色々な形式でダウンロードしたり出来る便利なホスティングサービスです。
+        https://www.gitbook.com/
+        The platform GitBook.com is like an "Heroku for books": you can create a book on it (public, or private) and update it using git push.
+        と謳うように、本に特化したHerokuみたいなもので、git pushベースで文書のデプロイを行ったりも出来ます。
+        例を出すと、以下のような形で簡単に情報を公開することができます。綺麗にまとまっていて見やすいですね。
+        https://www.gitbook.com/book/gitbookio/javascript/details
+        https://gitbookio.gitbooks.io/javascript/content/
+    <h1>gitbookコマンドについて</h1>
+        gitbookコマンドについて、インストールから、用意されているサブコマンドそれぞれの簡単な使い方までをざっくり説明していきます。
+    <h1>gitbookコマンドのインストール</h1>
+        npmにて管理されているので、インストールはとても簡単です。
+        汎用的に使えていいコマンドだと思うので、私はグローバルインストールしています。ローカルインストールももちろんできるので、お好みで。
+        npm install -g gitbook-cli
+        これをインストールするとgitbookというコマンドが利用できるようになります。
+    <h1>gitbookコマンドの色々な機能について</h1>
+        gitbookコマンドは便利なサブコマンドをいくつか用意してくれています
+        それらについて説明していきます。
+        init
+        serve
+        build
+    <h1>gitbook init</h1>
+        gitbook init
+        というコマンドを実行すると、gitbookの雛形が生成されます。
+        まぁ雛形といっても全然大したことはなくて、以下のファイルが生成されるだけです。
+        README.md
+        SUMMARY.md
+        README.mdに関してはよく見かけると思う普通の.mdファイルなのですが、GitBook特有なものとしてSUMMARY.mdというものも生成されます。
+        SUMMARY.mdに関してはGitBookの機能を引き出すために少し書き方のルールがあるので、後ほど説明していきます。
+    <h1>gitbook serve</h1>
+        gitbook serve
+        このコマンドを実行すると、GitBookがmarkdownをhtmlに変換したページが表示されるローカルサーバーが立ち上がります。
+        また、このローカルサーバーはライブローディング対応なため、ファイルの変更/保存を検知して自動的に変換及び画面の更新を行ってくれます。
+        右手にエディタ、左手にブラウザを置いておけば良い感じに文書作成がしていけるのでとても便利です！
+    <h1>gitbook build</h1>
+        gitbook build
+        gitbook.comと連携する場合は不要ですが、変換後の静的ファイル郡を生成します。
+        このサブコマンドがあるので、他のホスティングサービスだったり自分で借りているサーバーだったりにビルド後の結果をデプロイしたりすれば普通にどんなサーバーでも簡単にドキュメント作成可能です。
+        地味に良いサブコマンドですね :)
+
+    </div>	
+</body>
+</html>
